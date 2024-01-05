@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Test.ViewModel.HomeVM
+
+<div class="text-center">
+    <h1>@Model.Company.CompanyName</h1>
+    <h6>@Model.Company.Street</h6>
+    <h6>@Model.Company.City</h6>
+    <h6>@Model.Company.Pin</h6>
+    <h6>@Model.Company.Phone</h6>
+    <h6>@Model.Company.Email</h6>
+    <hr />
+    <p></p>
+    @foreach(var v in Model.info)
+    {
+        <p>@v</p>
+    }
+
+</div>
